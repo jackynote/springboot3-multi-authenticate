@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+<section class="hero is-fullheight is-primary">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-4 is-offset-4">
+                <h3 class="title has-text-white">Login</h3>
+                <div class="box">
+                    <form action="/login" method="post">
+                        <input type="hidden" name="{{_csrf.parameterName}}" value="{{_csrf.token}}"/>
+
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="text" placeholder="Enter username..." name="username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="password" placeholder="Enter password..." name="password">
+                            </div>
+                        </div>
+                        <button class="button is-block is-link is-large is-fullwidth">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

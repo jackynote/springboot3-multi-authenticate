@@ -1,0 +1,10 @@
+.gradle
+.idea
+out
+build
+dist
+rebel.xml
+*.iml
+node_modules/
+*.db
+bin
